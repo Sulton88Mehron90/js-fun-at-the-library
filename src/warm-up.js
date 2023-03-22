@@ -13,35 +13,46 @@
 // var title = "Harry Potter";
 // var ...
 
-
-
 // Reassign (not initialize) your "pages" variable from above. An editor came around and
 // condensed the book, use a built in math operator to make the page count a quarter
 // of what it currently is 
 
-
+var title = "Takeaways: 101 Lessons from 30 years as a Silicon Valley CEO";
+var pages = 140;
+var mathOfCondensingBook = pages * 0.25;
+console.log("Updated page count:", mathOfCondensingBook);
+pages = 35;
+console.log("--------------------------------------------");
 
 // Initialize a new variable "movie", but leave it undefined
-
-
 
 // Create a variable named "sequel", and assign it to a be a sequel of your
 // book (made up or not!). Your sequel must make use of your "title" variable from above
 
+var movie;
+var sequel = `"Takeaways 2" is a sequel to "${title}" book by Lacy H. Edwards.`;
+console.log(sequel);
+console.log("--------------------------------------------");
 
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the book you chose is your favorite book or not
-
-
-
 
 // Create a new variable named "isShortStory", and use a comparison operator to
 // assign a boolean value to this variable. If "pages" is less than 25, the
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
 
-
+var isFavorite = true;
+var isShortStory;
+if(pages < 25){
+    isShortStory = true;
+    console.log(`"${title}" is not a short story.`);
+}else{
+    isShortStory = false;
+    console.log(`"${title}" is not a short story.`);
+};
+console.log("--------------------------------------------");
 
 //------------------------- Conditionals -------------------------//
 
