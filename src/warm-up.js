@@ -61,14 +61,24 @@ console.log("--------------------------------------------");
 // the statement 'I could read that in a day!', otherwise, log the statement 
 // 'Ok, maybe I could read that in a day and a half'
 
-
+if(pages < 1000){
+    console.log("I could read that in a day!");
+}else{
+    console.log("Ok, maybe I could read that in a day and a half");
+};
+console.log("--------------------------------------------");
 
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite book is [title]!'. Otherwise, log the
 // statement 'I recently read the [title] book'. In either case, the value stored in
 // the "title" variable should be included in the logged statement.
 
-
+if(isFavorite === true){
+    console.log(`My favorite book is "${title}"!`);
+}else{
+    console.log(`I recently read the "${title}" book`);
+}
+console.log("--------------------------------------------");
 
 //------------------------- Arrays -------------------------//
 
@@ -76,24 +86,35 @@ console.log("--------------------------------------------");
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
 
+var books = ["Clean Code", "The Pragmatic Programmer", "The Mythical Man-Month", "Design Patterns: Elements of Reusable Object-Oriented Software", "Refactoring: Improving the Design of Existing Code"];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+books[2];
+console.log(books[2]);
+console.log("--------------------------------------------");
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
-
+var belowTwoHundred = [3, 6, 21, 7, 8, 9, 11, 10, 27, 24, 150, 199];
+belowTwoHundred[5];
 
 // Write the code to access the 5th element of the array, using bracket notation.
-
+console.log(belowTwoHundred[5]);
+console.log("--------------------------------------------");
 
 //------------------------- Objects -------------------------//
 
 // Create a new variable "dictionary" and assign to it an object literal with two
 // keys: name, and hasThesaurus. The value for name should the string 'Webster's', and
 // the value for hasThesaurus should be false
-
-
 // Write the code to add the key of pageCount, with the value of 720. Use dot
 // notation to do this. DO NOT modify your code from above.
+
+var dictionary = {
+    name: "Webster's",
+    hasThesaurus: false
+};
+dictionary.pageCount = 720;
+console.log(dictionary);
+console.log("--------------------------------------------");
