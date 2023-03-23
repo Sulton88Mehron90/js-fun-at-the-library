@@ -11,11 +11,10 @@ function buildMainCharacter(name, age, pronouns){
 };
 
 function saveReview(string, reviews){
-  reviews.push(string);
-  for(var i = 0; i < reviews.lenght; i++){
-    console.log(reviews[i]);
+  if(!reviews.includes(string)){
+    reviews.push(string);
   };
-};
+}
 
 function calculatePageCount(bookTitle){
   var bookPageCount = bookTitle.length * 20;
@@ -32,10 +31,9 @@ function writeBook(bookTitle, bookCharacter, string){
   return book;
 };
 function editBook(book){
- // console.log(book);
+ 
   pageCount = book.pageCount
   book.pageCount = pageCount * 0.75;
-  // book.pageCount = bookTitle.length * 0.75;
   console.log(book.pageCount);
 
 };
