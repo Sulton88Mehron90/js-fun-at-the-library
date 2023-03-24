@@ -1,5 +1,6 @@
 
 function shelfBook(book, sciFiShelf){
+  console.log(book);
   if(sciFiShelf.length < 3){
     return sciFiShelf.unshift(book);
   };
@@ -21,15 +22,14 @@ function listTitles(booksInfo){
   return listOfTitles.join(", ");
 };
 
-function searchShelf(booksOnShelf){
-  console.log(booksOnShelf)
-  for(var i = 0; i < booksOnShelf.length; i++){
-   if(!booksOnShelf.includes(booksOnShelf[i].title)){
-    return true;
-   }else if(booksOnShelf.includes(booksOnShelf[i].title)){
-    return false;
-   };
+function searchShelf(booksShelf, title){
+  for(var i = 0; i < booksShelf.length; i++){
+    if(booksShelf[i].title === title){
+      return true;
+    };
   };
+   return false;
+
 };
 
 
