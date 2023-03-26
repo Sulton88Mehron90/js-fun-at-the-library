@@ -6,7 +6,7 @@ function buildMainCharacter(name, age, pronouns){
     name: name,
     age: age,
     pronouns: pronouns
-  }
+  };
  return character
 };
 
@@ -31,10 +31,8 @@ function writeBook(bookTitle, bookCharacter, string){
   return book;
 };
 function editBook(book){
- 
   pageCount = book.pageCount
   book.pageCount = pageCount * 0.75;
-  console.log(book.pageCount);
 
 };
 

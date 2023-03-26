@@ -1,6 +1,5 @@
 
 function shelfBook(book, sciFiShelf){
-  console.log(book);
   if(sciFiShelf.length < 3){
     return sciFiShelf.unshift(book);
   };
@@ -17,7 +16,7 @@ function unshelfBook(bookTitle, sciFiShelf){
 function listTitles(booksInfo){
   var listOfTitles = [];
   for(var i = 0; i < booksInfo.length; i++){
-      listOfTitles.push(booksInfo[i].title)
+    listOfTitles.push(booksInfo[i].title)
   };
   return listOfTitles.join(", ");
 };
@@ -28,8 +27,7 @@ function searchShelf(booksShelf, title){
       return true;
     };
   };
-   return false;
-
+  return false;
 };
 
 
