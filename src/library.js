@@ -22,7 +22,7 @@ function checkoutBook(name, title, genre){
     }else if(genre === "fantasy"){
       name.shelves.fantasy.splice(title.title);
     };
-    name.shelves.fantasy[i].title !== title || name.shelves.nonFiction[i].title !== title || name.shelves.fiction[i].title !== title;
+    name.shelves[title.genre] !== title;
     return `You have now checked out ${title} from the ${name.name}.`;
   };
   return `Sorry, there are currently no copies of ${title} available at the ${name.name}.`;

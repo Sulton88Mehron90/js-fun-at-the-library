@@ -15,9 +15,9 @@ function unshelfBook(bookTitle, sciFiShelf){
 
 function listTitles(booksInfo){
   var listOfTitles = [];
-  for(var i = 0; i < booksInfo.length; i++){
+    for(var i = 0; i < booksInfo.length; i++){
     listOfTitles.push(booksInfo[i].title)
-  };
+    };
   return listOfTitles.join(", ");
 };
 
